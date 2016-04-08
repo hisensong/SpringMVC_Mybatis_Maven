@@ -6674,3 +6674,88 @@ Caused by: java.io.FileNotFoundException: class path resource [spring.xml] canno
 [DEBUG][2016-04-07 18:34:01,733][org.springframework.beans.factory.support.DefaultListableBeanFactory]Retrieved dependent beans for bean '(inner bean)': [transactionAdvice]
 [DEBUG][2016-04-07 18:34:01,734][org.springframework.beans.factory.support.DisposableBeanAdapter]Invoking destroy method 'close' on bean with name 'dataSource'
 [INFO][2016-04-07 18:34:01,739][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[DEBUG][2016-04-08 11:11:28,977][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2016-04-08 11:11:29,010][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2016-04-08 11:11:29,013][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+[DEBUG][2016-04-08 11:11:29,099][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+[DEBUG][2016-04-08 11:11:29,106][org.apache.http.impl.execchain.MainClientExec]Opening connection {}->http://localhost:8080
+[DEBUG][2016-04-08 11:11:29,142][org.apache.http.impl.conn.DefaultHttpClientConnectionOperator]Connecting to localhost/127.0.0.1:8080
+[DEBUG][2016-04-08 11:11:29,144][org.apache.http.impl.conn.DefaultHttpClientConnectionOperator]Connection established 127.0.0.1:64060<->127.0.0.1:8080
+[DEBUG][2016-04-08 11:11:29,145][org.apache.http.impl.execchain.MainClientExec]Executing request GET /ssmm/user/showOneUser?id=4 HTTP/1.1
+[DEBUG][2016-04-08 11:11:29,145][org.apache.http.impl.execchain.MainClientExec]Target auth state: UNCHALLENGED
+[DEBUG][2016-04-08 11:11:29,147][org.apache.http.impl.execchain.MainClientExec]Proxy auth state: UNCHALLENGED
+[DEBUG][2016-04-08 11:11:29,151][org.apache.http.headers]http-outgoing-0 >> GET /ssmm/user/showOneUser?id=4 HTTP/1.1
+[DEBUG][2016-04-08 11:11:29,151][org.apache.http.headers]http-outgoing-0 >> Host: localhost:8080
+[DEBUG][2016-04-08 11:11:29,151][org.apache.http.headers]http-outgoing-0 >> Connection: Keep-Alive
+[DEBUG][2016-04-08 11:11:29,151][org.apache.http.headers]http-outgoing-0 >> User-Agent: Apache-HttpClient/4.4 (Java 1.5 minimum; Java/1.7.0_71)
+[DEBUG][2016-04-08 11:11:29,152][org.apache.http.headers]http-outgoing-0 >> Accept-Encoding: gzip,deflate
+[DEBUG][2016-04-08 11:11:29,152][org.apache.http.wire]http-outgoing-0 >> "GET /ssmm/user/showOneUser?id=4 HTTP/1.1[\r][\n]"
+[DEBUG][2016-04-08 11:11:29,152][org.apache.http.wire]http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+[DEBUG][2016-04-08 11:11:29,152][org.apache.http.wire]http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2016-04-08 11:11:29,153][org.apache.http.wire]http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.4 (Java 1.5 minimum; Java/1.7.0_71)[\r][\n]"
+[DEBUG][2016-04-08 11:11:29,153][org.apache.http.wire]http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG][2016-04-08 11:11:29,153][org.apache.http.wire]http-outgoing-0 >> "[\r][\n]"
+[DEBUG][2016-04-08 11:11:30,158][org.apache.http.wire]http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2016-04-08 11:11:30,158][org.apache.http.wire]http-outgoing-0 << "Server: Apache-Coyote/1.1[\r][\n]"
+[DEBUG][2016-04-08 11:11:30,158][org.apache.http.wire]http-outgoing-0 << "Content-Type: text/html;charset=UTF-8[\r][\n]"
+[DEBUG][2016-04-08 11:11:30,158][org.apache.http.wire]http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2016-04-08 11:11:30,158][org.apache.http.wire]http-outgoing-0 << "Date: Fri, 08 Apr 2016 03:11:30 GMT[\r][\n]"
+[DEBUG][2016-04-08 11:11:30,159][org.apache.http.wire]http-outgoing-0 << "[\r][\n]"
+[DEBUG][2016-04-08 11:11:30,159][org.apache.http.wire]http-outgoing-0 << "46[\r][\n]"
+[DEBUG][2016-04-08 11:11:30,159][org.apache.http.wire]http-outgoing-0 << "{"id":4,"username":"test02","password":"123456","age":18,"books":null}[\r][\n]"
+[DEBUG][2016-04-08 11:11:30,163][org.apache.http.headers]http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG][2016-04-08 11:11:30,163][org.apache.http.headers]http-outgoing-0 << Server: Apache-Coyote/1.1
+[DEBUG][2016-04-08 11:11:30,164][org.apache.http.headers]http-outgoing-0 << Content-Type: text/html;charset=UTF-8
+[DEBUG][2016-04-08 11:11:30,164][org.apache.http.headers]http-outgoing-0 << Transfer-Encoding: chunked
+[DEBUG][2016-04-08 11:11:30,164][org.apache.http.headers]http-outgoing-0 << Date: Fri, 08 Apr 2016 03:11:30 GMT
+[DEBUG][2016-04-08 11:11:30,169][org.apache.http.impl.execchain.MainClientExec]Connection can be kept alive indefinitely
+[DEBUG][2016-04-08 11:11:30,175][org.apache.http.wire]http-outgoing-0 << "0[\r][\n]"
+[DEBUG][2016-04-08 11:11:30,176][org.apache.http.wire]http-outgoing-0 << "[\r][\n]"
+[DEBUG][2016-04-08 11:11:30,176][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8080] can be kept alive indefinitely
+[DEBUG][2016-04-08 11:11:30,176][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+[DEBUG][2016-04-08 11:11:30,176][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection manager is shutting down
+[DEBUG][2016-04-08 11:11:30,176][org.apache.http.impl.conn.DefaultManagedHttpClientConnection]http-outgoing-0: Close connection
+[DEBUG][2016-04-08 11:11:30,177][org.apache.http.impl.conn.DefaultManagedHttpClientConnection]http-outgoing-0: Close connection
+[DEBUG][2016-04-08 11:11:30,177][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection manager shut down
+[DEBUG][2016-04-08 11:17:43,767][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2016-04-08 11:17:43,796][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2016-04-08 11:17:43,800][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+[DEBUG][2016-04-08 11:17:43,835][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+[DEBUG][2016-04-08 11:17:43,838][org.apache.http.impl.execchain.MainClientExec]Opening connection {}->http://localhost:8080
+[DEBUG][2016-04-08 11:17:43,854][org.apache.http.impl.conn.DefaultHttpClientConnectionOperator]Connecting to localhost/127.0.0.1:8080
+[DEBUG][2016-04-08 11:17:43,857][org.apache.http.impl.conn.DefaultHttpClientConnectionOperator]Connection established 127.0.0.1:64597<->127.0.0.1:8080
+[DEBUG][2016-04-08 11:17:43,858][org.apache.http.impl.execchain.MainClientExec]Executing request POST /ssmm/user/addUser HTTP/1.1
+[DEBUG][2016-04-08 11:17:43,858][org.apache.http.impl.execchain.MainClientExec]Target auth state: UNCHALLENGED
+[DEBUG][2016-04-08 11:17:43,860][org.apache.http.impl.execchain.MainClientExec]Proxy auth state: UNCHALLENGED
+[DEBUG][2016-04-08 11:17:43,864][org.apache.http.headers]http-outgoing-0 >> POST /ssmm/user/addUser HTTP/1.1
+[DEBUG][2016-04-08 11:17:43,866][org.apache.http.headers]http-outgoing-0 >> Content-Length: 77
+[DEBUG][2016-04-08 11:17:43,866][org.apache.http.headers]http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[DEBUG][2016-04-08 11:17:43,867][org.apache.http.headers]http-outgoing-0 >> Host: localhost:8080
+[DEBUG][2016-04-08 11:17:43,867][org.apache.http.headers]http-outgoing-0 >> Connection: Keep-Alive
+[DEBUG][2016-04-08 11:17:43,867][org.apache.http.headers]http-outgoing-0 >> User-Agent: Apache-HttpClient/4.4 (Java 1.5 minimum; Java/1.7.0_71)
+[DEBUG][2016-04-08 11:17:43,867][org.apache.http.headers]http-outgoing-0 >> Accept-Encoding: gzip,deflate
+[DEBUG][2016-04-08 11:17:43,868][org.apache.http.wire]http-outgoing-0 >> "POST /ssmm/user/addUser HTTP/1.1[\r][\n]"
+[DEBUG][2016-04-08 11:17:43,868][org.apache.http.wire]http-outgoing-0 >> "Content-Length: 77[\r][\n]"
+[DEBUG][2016-04-08 11:17:43,868][org.apache.http.wire]http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+[DEBUG][2016-04-08 11:17:43,869][org.apache.http.wire]http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+[DEBUG][2016-04-08 11:17:43,869][org.apache.http.wire]http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2016-04-08 11:17:43,869][org.apache.http.wire]http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.4 (Java 1.5 minimum; Java/1.7.0_71)[\r][\n]"
+[DEBUG][2016-04-08 11:17:43,869][org.apache.http.wire]http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG][2016-04-08 11:17:43,869][org.apache.http.wire]http-outgoing-0 >> "[\r][\n]"
+[DEBUG][2016-04-08 11:17:43,870][org.apache.http.wire]http-outgoing-0 >> "username=%E5%9B%BD%E7%BE%8E%E7%AE%A1%E7%90%86%E5%91%98&password=098765&age=67"
+[DEBUG][2016-04-08 11:17:44,764][org.apache.http.wire]http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2016-04-08 11:17:44,764][org.apache.http.wire]http-outgoing-0 << "Server: Apache-Coyote/1.1[\r][\n]"
+[DEBUG][2016-04-08 11:17:44,764][org.apache.http.wire]http-outgoing-0 << "Content-Length: 0[\r][\n]"
+[DEBUG][2016-04-08 11:17:44,765][org.apache.http.wire]http-outgoing-0 << "Date: Fri, 08 Apr 2016 03:17:44 GMT[\r][\n]"
+[DEBUG][2016-04-08 11:17:44,765][org.apache.http.wire]http-outgoing-0 << "[\r][\n]"
+[DEBUG][2016-04-08 11:17:44,773][org.apache.http.headers]http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG][2016-04-08 11:17:44,773][org.apache.http.headers]http-outgoing-0 << Server: Apache-Coyote/1.1
+[DEBUG][2016-04-08 11:17:44,773][org.apache.http.headers]http-outgoing-0 << Content-Length: 0
+[DEBUG][2016-04-08 11:17:44,773][org.apache.http.headers]http-outgoing-0 << Date: Fri, 08 Apr 2016 03:17:44 GMT
+[DEBUG][2016-04-08 11:17:44,793][org.apache.http.impl.execchain.MainClientExec]Connection can be kept alive indefinitely
+[DEBUG][2016-04-08 11:17:44,794][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8080] can be kept alive indefinitely
+[DEBUG][2016-04-08 11:17:44,798][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+[DEBUG][2016-04-08 11:17:44,824][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection manager is shutting down
+[DEBUG][2016-04-08 11:17:44,825][org.apache.http.impl.conn.DefaultManagedHttpClientConnection]http-outgoing-0: Close connection
+[DEBUG][2016-04-08 11:17:44,827][org.apache.http.impl.conn.DefaultManagedHttpClientConnection]http-outgoing-0: Close connection
+[DEBUG][2016-04-08 11:17:44,828][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection manager shut down

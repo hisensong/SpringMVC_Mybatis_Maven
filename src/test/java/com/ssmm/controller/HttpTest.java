@@ -21,7 +21,7 @@ import org.junit.Test;
 public class HttpTest {
 	
 	public static final String GET_URL = "http://localhost:8080/ssmm/user/showOneUser?id=4";
-	public static final String POST_URL = "https://apitest.fraudmetrix.cn/riskService";
+	public static final String POST_URL = "http://localhost:8080/ssmm/user/addUser";
 	public static final String FORM_POST_URL = "http://localhost:8080/myDemo/Ajax/serivceJ.action";
 	
 	/** 
@@ -80,11 +80,9 @@ public class HttpTest {
         HttpPost httppost = new HttpPost(POST_URL);  
         // 鍒涘缓鍙傛暟闃熷垪    
         List<NameValuePair> formparams = new ArrayList<NameValuePair>(); 
-        formparams.add(new BasicNameValuePair("partner_code", "demo")); 
-        formparams.add(new BasicNameValuePair("secret_key", "***"));
-        formparams.add(new BasicNameValuePair("event_id", "login"));
-        formparams.add(new BasicNameValuePair("account_login", "your_login_name"));
-        formparams.add(new BasicNameValuePair("ip_address", "your_login_ip"));
+        formparams.add(new BasicNameValuePair("username", "国美管理员")); 
+        formparams.add(new BasicNameValuePair("password", "098765"));
+        formparams.add(new BasicNameValuePair("age", "67"));
         UrlEncodedFormEntity uefEntity;  
         try {  
             uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");  

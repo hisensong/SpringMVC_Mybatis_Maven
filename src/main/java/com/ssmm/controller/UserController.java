@@ -32,4 +32,10 @@ public class UserController {
 	public User showOneUser(int id) {
 		return userService.getUserById(id);
 	}
+	
+	@RequestMapping(value = "/addUser", method = RequestMethod.POST)
+	@ResponseBody
+	public void addUser(User user) {
+		 userService.saveUser(user);
+	}
 }
