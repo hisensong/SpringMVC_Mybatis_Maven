@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.ssmm.common.ResponseService;
 import com.ssmm.model.User;
 import com.ssmm.service.UserService;
 
@@ -35,7 +36,14 @@ public class UserController {
 	
 	@RequestMapping(value = "/addUser", method = RequestMethod.POST)
 	@ResponseBody
-	public void addUser(User user) {
-		 userService.saveUser(user);
+	public ResponseService<User> addUser(User user) {
+		ResponseService<User> responseService = new ResponseService<User>();
+		try{
+			userService.saveUser(user);
+			responseService.success(user);
+		}catch(Exception e){
+			responseService.fail(null);
+		}
+		 return responseService;
 	}
 }

@@ -80,9 +80,9 @@ public class HttpTest {
         HttpPost httppost = new HttpPost(POST_URL);  
         // 鍒涘缓鍙傛暟闃熷垪    
         List<NameValuePair> formparams = new ArrayList<NameValuePair>(); 
-        formparams.add(new BasicNameValuePair("username", "国美管理员")); 
-        formparams.add(new BasicNameValuePair("password", "098765"));
-        formparams.add(new BasicNameValuePair("age", "67"));
+        formparams.add(new BasicNameValuePair("username", "国美1")); 
+        formparams.add(new BasicNameValuePair("password", "123456"));
+        formparams.add(new BasicNameValuePair("age", "24"));
         UrlEncodedFormEntity uefEntity;  
         try {  
             uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");  

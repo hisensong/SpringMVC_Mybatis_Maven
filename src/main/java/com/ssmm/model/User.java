@@ -1,6 +1,5 @@
 package com.ssmm.model;
 
-import java.util.List;
 
 public class User {
 	private Integer id;
@@ -10,16 +9,6 @@ public class User {
 	private String password;
 
 	private Integer age;
-
-	private List<Book> books;
-
-	public List<Book> getBooks() {
-		return books;
-	}
-
-	public void setBooks(List<Book> books) {
-		this.books = books;
-	}
 
 	public Integer getId() {
 		return id;
