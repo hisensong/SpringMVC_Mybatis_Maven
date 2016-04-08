@@ -14,22 +14,14 @@ import com.alibaba.fastjson.JSON;
 import com.ssmm.model.User;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "classpath:spring.xml",
-		"classpath:spring-mybatis.xml" })
+@ContextConfiguration(locations = { "classpath:spring/spring-root.xml",
+		"classpath:spring/spring-mybatis.xml" })
 public class TestUserDao {
 	private static final Logger logger = Logger
 			.getLogger(TestUserDao.class);
 
 	@Autowired
 	private UserMapper userMapper;
-
-	public UserMapper getUserMapper() {
-		return userMapper;
-	}
-
-	public void setUserMapper(UserMapper userMapper) {
-		this.userMapper = userMapper;
-	}
 
 	@Test
 	public void insert(){

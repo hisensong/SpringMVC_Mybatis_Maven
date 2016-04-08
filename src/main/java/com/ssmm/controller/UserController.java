@@ -16,25 +16,20 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
-	public UserService getUserService() {
-		return userService;
+	@RequestMapping(value = "/index",method = RequestMethod.GET)
+	public  String index() {
+		return "index";
 	}
-
-	public void setUserService(UserService userService) {
-		this.userService = userService;
-	}
-
-	@RequestMapping(method = RequestMethod.GET)
-	public @ResponseBody
-	String showUser() {
-
+	
+	@RequestMapping(value = "/showUser",method = RequestMethod.GET)
+	@ResponseBody
+	public  String showUser() {
 		return "12";
 	}
 
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
-	public @ResponseBody
-	User showOneUser(@PathVariable("id") int id) {
-
+	@RequestMapping(value = "/showOneUser", method = RequestMethod.GET)
+	@ResponseBody
+	public User showOneUser(int id) {
 		return userService.getUserById(id);
 	}
 }
