@@ -10,15 +10,6 @@
 		<result column="age" property="age" jdbcType="INTEGER" />
 	</resultMap>
 
-	<resultMap type="com.ssmm.model.User" id="UserWithBooks"
-		extends="BaseResultMap">
-		<collection property="books" ofType="com.ssmm.model.Book">
-			<id column="book_id" property="id" jdbcType="INTEGER" />
-		    <result column="book_name" property="name" jdbcType="VARCHAR" />
-		    <result column="book_price" property="price" jdbcType="DECIMAL" />
-		</collection>
-	</resultMap>
-
 	<sql id="Base_Column_List">
 		id, username, password, age
 	</sql>
@@ -94,18 +85,5 @@
 		where id = #{id,jdbcType=INTEGER}
 	</update>
 
-	<select id="getAll" resultMap="UserWithBooks">
-		select
-		u.id as id,
-		u.username as username,
-		u.password as password,
-		u.age as age,
-		b.id as book_id,
-		b.name as book_name,
-		b.price as book_price
-		from
-		user u
-		left join userbook ub on u.id = ub.user_id
-		left join book b on ub.book_id = b.id 
-	</select>
+	
 </mapper>
