@@ -6,4 +6,6 @@ public interface UserService {
 	public User getUserById(int id);
 	
 	public void saveUser(User user);
+	
+	boolean addUser(User user);//测试事务
 }

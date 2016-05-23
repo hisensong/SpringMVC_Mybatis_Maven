@@ -25,8 +25,20 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public void saveUser(User user) {
+	public void saveUser(User user) {		
 		userMapper.insert(user);
+	}
+
+	
+	/**
+	 * 测试xml配置事务
+	 */
+	@Override
+	public boolean addUser(User user) {	
+		userMapper.insert(user);
+		//发生异常事务回滚
+		int a = 3 / 0;		
+		return true;
 	}
 
 }
