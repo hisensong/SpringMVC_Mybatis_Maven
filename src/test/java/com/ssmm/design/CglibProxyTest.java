@@ -10,6 +10,11 @@ import com.ssmm.design.cglibproxy.CglibProxy;
  * Datetime: 2016年5月26日 上午10:47:58
  */
 public class CglibProxyTest {
-	CglibProxy proxy = new CglibProxy();
+	
+	public static void main(String[] args){
+		CglibProxy proxy = new CglibProxy();
+		
+	}
+	
 	
 }
