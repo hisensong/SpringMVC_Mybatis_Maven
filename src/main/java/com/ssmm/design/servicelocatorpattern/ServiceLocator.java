@@ -1,4 +1,4 @@
-package com.ssmm.servicelocatorpattern;
+package com.ssmm.design.servicelocatorpattern;
 
 /**
  * Description: 服务定位器

@@ -1,4 +1,4 @@
-package com.ssmm.servicelocatorpattern;
+package com.ssmm.design.servicelocatorpattern;
 
 import java.util.ArrayList;
 import java.util.List;

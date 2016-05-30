@@ -1,4 +1,4 @@
-package com.ssmm.servicelocatorpattern;
+package com.ssmm.design.servicelocatorpattern;
 
 /**
  * Description: 使用 ServiceLocator 来演示服务定位器设计模式。

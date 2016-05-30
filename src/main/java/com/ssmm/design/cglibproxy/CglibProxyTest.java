@@ -1,4 +1,4 @@
-package com.ssmm.design;
+package com.ssmm.design.cglibproxy;
 
 import java.net.Proxy;
 
